@@ -1,10 +1,10 @@
 class AiTools < Formula
   desc "GitHub binary installer"
   homepage "https://github.com/SethHorsley/ai-tools"
-  version "0.1.0"
+  version "0.1.17"
   if Hardware::CPU.arm?
-    url "https://github.com/SethHorsley/ai-tools/releases/download/v#{version}/agg-files-darwin-arm64"
-    sha256 "abc123..." # Replace with actual SHA256 for ARM binary
+    url "https://github.com/SethHorsley/ai-tools/archive/v0.1.17.tar.gz"
+    sha256 "7d7786a4a90916a0eb6621db8ae3dec9f1f13aa10e085d4952c62e08616aba53" # Replace with actual SHA256 for ARM binary
   else
     url "https://github.com/SethHorsley/ai-tools/releases/download/v#{version}/agg-files-darwin-x86_64"
     sha256 "def456..." # Replace with actual SHA256 for Intel binary
